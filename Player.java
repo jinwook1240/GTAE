@@ -27,9 +27,6 @@ public class Player extends Actor
     public void act() 
     {
         // Add your action code here.
-        GreenfootImage player=new GreenfootImage("player1_1.png");
-        player.scale(40,20);
-        this.setImage(player);
         if(Greenfoot.isKeyDown("up")){
             setRotation(0);
             setLocation(this.getX(),this.getY()-5);

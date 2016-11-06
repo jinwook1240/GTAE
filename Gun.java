@@ -16,9 +16,6 @@ public class Gun extends Actor
     {
         // Add your action code here.
         
-        GreenfootImage gun=new GreenfootImage("Gun1.png");
-        gun.scale(25,15);
-        this.setImage(gun);
         if(getOneObjectAtOffset(0,0,Player.class)!=null){
         getWorld().removeObject(this);
         Player.giveGun("gun",20);

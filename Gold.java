@@ -16,9 +16,6 @@ public class Gold extends Actor
     {
         // Add your action code here.
         
-        GreenfootImage gold=new GreenfootImage("gold.jpg");
-        gold.scale(25,25);
-        this.setImage(gold);
         if(getOneObjectAtOffset(0,0,Player.class)!=null){
         getWorld().removeObject(this);
         Player.giveGold(20);
